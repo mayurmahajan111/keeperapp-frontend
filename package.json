@@ -7,6 +7,7 @@
   "dependencies": {
     "@material-ui/core": "4.6.1",
     "@material-ui/icons": "4.5.1",
+    "nvm": "^0.0.4",
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-scripts": "^5.0.1",
@@ -17,7 +18,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts --expose-gc --max-old-space-size=8192 build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
